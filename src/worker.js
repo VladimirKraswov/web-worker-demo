@@ -4,6 +4,7 @@ function factorial(n) {
 }
 
 // Получаем данные от основного потока
+// eslint-disable-next-line no-restricted-globals
 self.onmessage = function (event) {
   const number = event.data;
   const result = factorial(number);
